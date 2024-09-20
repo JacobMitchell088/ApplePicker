@@ -7,6 +7,7 @@ public class AppleTree : MonoBehaviour
 
     [Header("Inscribed")]
     public GameObject applePrefab;
+    public GameObject badApplePrefab;
 
     // Speed at which apple tree moves
     public float speed = 1f;
