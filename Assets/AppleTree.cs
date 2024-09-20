@@ -22,7 +22,7 @@ public class AppleTree : MonoBehaviour
     // Seconds between apple instantiations
     public float appleDropDelay = 1f;
 
-    public float badAppleChance = 0.5f;
+    public float badAppleChance = 0.1f;
 
 
 

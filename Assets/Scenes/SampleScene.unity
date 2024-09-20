@@ -840,6 +840,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5837229994552334342, guid: 0e562c1436058bf488f2f1e33b579c3c, type: 3}
     - target: {fileID: 5577395731339550665, guid: fdd45ef19db274a46819be266bde247d, type: 3}
+      propertyPath: badAppleChance
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5577395731339550665, guid: fdd45ef19db274a46819be266bde247d, type: 3}
       propertyPath: badApplePrefab
       value: 
       objectReference: {fileID: 2523794075567037888, guid: 7069ae6caeb40454e95977b72373b064, type: 3}
