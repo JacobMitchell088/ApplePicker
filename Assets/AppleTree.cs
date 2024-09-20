@@ -22,6 +22,8 @@ public class AppleTree : MonoBehaviour
     // Seconds between apple instantiations
     public float appleDropDelay = 1f;
 
+    public float badAppleChance = 0.5f;
+
 
 
 
@@ -37,9 +39,16 @@ public class AppleTree : MonoBehaviour
     }
 
     void DropApple() {
+        if (Random.value < badAppleChance) {
+        GameObject badApple = Instantiate<GameObject>(badApplePrefab);
+        badApple.transform.position = transform.position;
+        Invoke("DropApple", appleDropDelay);
+        }
+        else {
         GameObject apple = Instantiate<GameObject>(applePrefab);
         apple.transform.position = transform.position;
         Invoke("DropApple", appleDropDelay);
+        }
     }
 
     // Update is called once per frame
