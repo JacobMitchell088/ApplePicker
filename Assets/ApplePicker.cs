@@ -43,7 +43,7 @@ public class ApplePicker : MonoBehaviour
 
         // check to see if we end game
         if (basketList.Count == 0) {
-            SceneManager.LoadScene("_Scene_0");
+            SceneManager.LoadScene("Game Over");
         }
     }
 
